@@ -1,0 +1,85 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+/* Header - Bigger and Rectangular */
+header {
+    background: #333;
+    color: white;
+    padding: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: start;
+}
+
+/* Navigation - Using Flexbox */
+nav {
+    background: black;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    /* Adjusted spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Holy Grail Layout */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Main (bigger) + Aside (smaller) */
+    gap: 20px;
+    padding-right: 0px;
+}
+
+/* Main Content - RECTANGLE (Now on the Left) */
+main {
+    background: #d3d3d3;
+    padding: 25px;
+    min-height: 140px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Aside Content - SMALLER (Now on the Right) */
+aside {
+    background: white;
+    padding-top: 25px;
+    min-height: 130px;
+    text-align: left;
+    margin-bottom: 10px;
+    /* Fixed incorrect value */
+}
+
+/* Footer - Bigger & Centered */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    /* Adjusted size */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
