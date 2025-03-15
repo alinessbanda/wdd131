@@ -4,14 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aliness Banda - WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Aliness Banda</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals by Aliness Banda. Learn web design, development, and interactive techniques.">
+    <meta name="author" content="Aliness Banda">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-
     <header>
-
+        <h1>WDD 131 - Dynamic Web Fundamentals - Aliness Banda</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma?lang=eng"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="Final_Project_Folder_Link" target="_blank">Final Project Folder</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <section class="card about-me">
+            <div class="text-content">
+                <h2>About Me</h2>
+                <p>My name is Aliness Banda. I was born in Zambia and currently live in South Africa with my family. I
+                    am the first born in a family of 3 and I mostly love to sing, read, and dance. I am a student taking
+                    WEB and Computer Science courses, where I am learning web development and improving my coding
+                    skills. This website is part of my journey in exploring web technologies and building projects.</p>
+            </div>
+            <div class="image-content">
+                <img src="images/about-me.jpg" alt="A picture representing me">
+            </div>
+        </section>
+
+        <section class="card zambia">
+            <div class="image-content">
+                <img src="images/about-zambia.jpg" alt="A beautiful view of Lusaka, Zambia">
+            </div>
+            <div class="text-content">
+                <h2>Lusaka, Zambia</h2>
+                <p>Zambia is a landlocked country located in Southern Africa, known for its diverse wildlife, rich
+                    cultural heritage, and stunning landscapes. It is home to Victoria Falls, one of the largest and
+                    most famous waterfalls in the world, as well as vast national parks teeming with wildlife.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸Aliness Banda🌸 Zambia.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
 </body>
 
 </html>
