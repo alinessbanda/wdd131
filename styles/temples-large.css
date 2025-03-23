@@ -1,0 +1,51 @@
+/* Larger Screen Styles */
+@media (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        /* Ensure it's centered */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Temple Gallery for Larger Screens */
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+}

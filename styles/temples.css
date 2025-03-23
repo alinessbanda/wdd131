@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    background-color: white;
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    background-color: #4B1C64;
+    display: flex;
+    justify-content: center;
+    /* Centers the content */
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header p {
+    font-size: 39px;
+    /* Make title larger */
+    font-weight: 700;
+    /* Bold text */
+    color: white;
+    /* White text for contrast */
+    margin-bottom: 10px;
+    /* Add spacing between title and nav */
+}
+
+
+/* Navigation */
+nav {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* Hide menu by default in mobile */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+.active {
+    color: yellow;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+main h1 {
+    font-size: 36px;
+    /* Adjust size as needed */
+    margin-top: 40px;
+    /* Adds space between the nav and h1 */
+    margin-bottom: 30px;
+    /* Adds space before images */
+    padding: 15px;
+}
+
+/* Temple Gallery */
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Default to 2 columns on mobile */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #4B1C64;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* When menu is toggled open */
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul li {
+    border-bottom: 1px solid #fff;
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Optional: Adjust when menu is open */
+nav ul.active li a {
+    background-color: #444;
+}
