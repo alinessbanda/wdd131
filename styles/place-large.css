@@ -1,0 +1,83 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #007847;
+    /* Example: Adjust to match Zambia's theme */
+    --secondary-color: #ffcc00;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.data-section,
+.weather-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+/* Media Query for Larger View (Tablet/Laptop/Desktop) */
+@media (min-width: 601px) {
+    .weather-section h2::after {
+        content: "⛅";
+        /* Weather emoji */
+        font-size: 2rem;
+        /* Adjust size as needed */
+    }
+
+    /* Remove the SVG icon for larger screens */
+    .weather-section h2 {
+        padding-right: 10px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zambia</title>
+    <meta name="description" content="Learn about Zambia, it's culture, attractions and more!">
+    <meta name="author" content="Aliness Banda">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Zambia</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Hero Section</h2> <!-- Added a heading for the hero section -->
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Victoria Falls, Zambia" width="500" height="250">
+            </picture>
+        </section>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 752,612 km²</li>
+                <li><strong>Population:</strong> 18.38 million</li>
+                <li><strong>Capital:</strong> Lusaka</li>
+                <li><strong>Languages:</strong> English, Nyanja</li>
+                <li><strong>Currency:</strong> Zambian Kwacha</li>
+                <li><strong>Time Zone:</strong> UTC +2</li>
+                <li><strong>Calling Code:</strong> +260</li>
+                <li><strong>Internet TLD:</strong> .zm</li>
+            </ul>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">N/A</span>°C</li>
+                <li><strong>Conditions:</strong> <span id="conditions">N/A</span></li>
+                <li><strong>Wind:</strong> <span id="wind">N/A</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌸Aliness Banda🌸 Zambia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fix: Use the correct ID for the year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Update last modified date
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
+
+</body>
+
+</html>
