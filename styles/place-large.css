@@ -60,13 +60,12 @@ h2 {
     .weather-section h2::after {
         content: "⛅";
         /* Weather emoji */
-        font-size: 2rem;
-        /* Adjust size as needed */
     }
 
     /* Remove the SVG icon for larger screens */
     .weather-section h2 {
         padding-right: 10px;
+
     }
 }
 

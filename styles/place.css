@@ -8,6 +8,14 @@
     --font-family: Arial, sans-serif;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('path/to/roboto.woff2') format('woff2'),
+        url('path/to/roboto.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* General Styling */
 body {
     font-family: var(--font-family);
@@ -15,7 +23,9 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
 }
+
 
 header {
     background-color: var(--primary-color);
@@ -65,8 +75,7 @@ h2 {
         content: "";
         background: url("../images/weather-icon.svg") no-repeat center;
         display: inline-block;
-        width: 24px;
-        height: 24px;
+        font-size: small;
     }
 
     /* Remove emoji for mobile */
