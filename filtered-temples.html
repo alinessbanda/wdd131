@@ -8,13 +8,13 @@
         content="A temple album showcasing images of various temples. Explore beautiful temples from around the world and learn about their significance.">
     <meta name="author" content="Aliness Banda">
     <title>Temple Album</title>
-
-    <!-- Link to CSS files (Mobile First Approach) -->
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+        as="style">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
 
     <!-- Link to JavaScript file -->
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -38,52 +38,8 @@
 
     <main>
         <h2>Explore beautiful Temples</h2>
-        <div class="temple-gallery">
+        <div class="res-grid">
 
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Placeholder.jpg" alt="Temple Placeholder">
-                <figcaption>Houston Texas Temple</figcaption>
-            </figure>
         </div>
     </main>
 
@@ -108,9 +64,11 @@
                 // Toggle the menu visibility
                 navMenu.classList.toggle('active');
                 if (navMenu.classList.contains('active')) {
-                    hamburger.textContent = 'X'; // Change hamburger to 'X' when menu is open
+                    hamburger.textContent = 'X';
+                    hamburger.setAttribute("aria-label", "Close navigation");
                 } else {
-                    hamburger.textContent = '☰'; // Revert back to hamburger icon when menu is closed
+                    hamburger.textContent = '☰';
+                    hamburger.setAttribute("aria-label", "Open navigation");
                 }
             });
         });

@@ -91,30 +91,27 @@ main h1 {
 }
 
 /* Temple Gallery */
-.temple-gallery {
+.res-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     /* Default to 2 columns on mobile */
     gap: 20px;
     padding: 20px;
     justify-items: center;
+    min-height: 600px;
 }
 
-figure {
-    text-align: center;
-}
 
 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-figcaption {
-    font-weight: bold;
-    margin-top: 5px;
-}
 
 /* Footer */
 footer {
@@ -123,6 +120,8 @@ footer {
     padding: 15px;
     text-align: center;
     margin-top: 20px;
+    display: block;
+    min-height: 1.2em;
 }
 
 /* When menu is toggled open */
