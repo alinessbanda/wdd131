@@ -1,0 +1,44 @@
+/* siteplan.css */
+
+/* Mobile-first styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A7C7E7;
+    color: #000;
+    margin: 0;
+    padding: 1rem;
+}
+
+header {
+    background-color: #6A5ACD;
+    /* Deep Purple */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    /* Larger font for visibility */
+    margin: 0;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: #6A5ACD;
+}
+
+footer {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+}
