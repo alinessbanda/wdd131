@@ -1,0 +1,99 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3e5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Main container */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(106, 27, 154, 0.2);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Grouping each label + input together */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Checkboxes and radios */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.4rem;
+}
+
+/* Radio/checkbox group */
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #5e35b1;
+}

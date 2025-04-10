@@ -1,0 +1,105 @@
+/* form.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 1rem;
+}
+
+header {
+    background-color: #6a0dad;
+    /* Purple background for header */
+    color: white;
+    padding: 2rem 0;
+    /* Increased padding for header visibility */
+    text-align: center;
+    font-size: 2rem;
+    /* Ensures the header text is large enough */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    color: #6a0dad;
+    /* Purple color for form header text */
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+fieldset {
+    margin-top: 1rem;
+    border: none;
+    padding: 0;
+}
+
+button,
+input[type="submit"] {
+    background-color: #6a0dad;
+    /* Purple background for button */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #9b30b0;
+    /* Lighter purple for hover effect */
+}
+
+footer {
+    background-color: #6a0dad;
+    /* Purple background for footer */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}

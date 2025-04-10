@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="Submit a product review with your rating and feedback. Product review by Aliness Banda.">
+    <meta name="author" content="Aliness Banda">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" id="rating1" name="rating" value="1" required> 1 &star;</label><br>
+                <label><input type="radio" id="rating2" name="rating" value="2"> 2 &star;&star;</label><br>
+                <label><input type="radio" id="rating3" name="rating" value="3"> 3 &star;&star;&star;</label><br>
+                <label><input type="radio" id="rating4" name="rating" value="4"> 4 &star;&star;&star;&star;</label><br>
+                <label><input type="radio" id="rating5" name="rating" value="5"> 5
+                    &star;&star;&star;&star;&star;</label>
+            </fieldset>
+
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required autocomplete="off">
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label><br>
+                <label><input type="checkbox" id="feature2" name="features" value="Ease of Use"> Ease of Use</label><br>
+                <label><input type="checkbox" id="feature3" name="features" value="Performance"> Performance</label><br>
+                <label><input type="checkbox" id="feature4" name="features" value="Design"> Design</label>
+
+            </fieldset>
+
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="4" cols="50" placeholder="Write your review here..."
+                autocomplete="off"></textarea>
+
+            <label for="username">Your name (Optional)</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name" autocomplete="name">
+
+            <input type="submit" value="Submit Review">
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸Aliness Banda🌸 Zambia.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
+</body>
+
+</html>
