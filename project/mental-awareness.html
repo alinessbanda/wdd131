@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Awareness Page</title>
+    <meta name="description" content="A site for promoting mental health awareness, self-care and support resources">
+    <meta name="author" content="Aliness Banda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mental-awareness.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <h1>Mental Awareness</h1>
+            <img src="images/mental-icon.svg" alt="Mental awareness logo" class="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="mental-awareness.html">Home</a></li>
+                <li><a href="self-care.html">Self-Care</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Illustration promoting mental awareness and emotional well-being"
+                    width="500" height="250" loading="lazy">
+            </picture>
+        </div>
+
+        <section>
+            <h2>Welcome to Mental Awareness</h2>
+            <p>Your mental health matters. At Mental Awareness, we believe in promoting emotional well-being and
+                providing tools and resources to help you thrive. Whether you're looking for daily self-care tips,
+                struggling with stress or just need someone to talk to - you're not alone.</p>
+        </section>
+
+        <section>
+            <h2>Why Mental Health Matters</h2>
+            <p>Mental health is just as important as physical health. It affects how we think, feel, act and relate to
+                others. Prioritizing your mental well-being helps you handle stress, connect with people and make
+                healthy decisions.</p>
+        </section>
+
+        <section>
+            <h2>What You'll Find Here</h2>
+            <ol>
+                <li>How can I recognize the early signs of mental health challenges in myself or others?</li>
+                <li>Where can I find free or affordable mental health support resources near me?</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Recognizing Early Signs</h2>
+
+            <p>It's important to recognize when you or someone you care about may be struggling with mental health.
+                Early signs can include:</p>
+            <ul class="dash-list">
+                <li>- Persistent sadness or anxiety</li>
+                <li>- Withdrawal from friends or activities</li>
+                <li>- Changes in sleep or appetite</li>
+                <li>- Difficulty concentrating</li>
+                <li>- Feeling overwhelmed or hopeless</li>
+            </ul>
+
+            <p>If you notice these signs don't ignore them, reach out for help or talk to someone you trust.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸Aliness Banda🌸 Zambia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
+
+</body>
+
+</html>

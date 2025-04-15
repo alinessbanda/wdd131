@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Mental Awareness</title>
+    <meta name="description" content="Support and mental health resources in South Africa">
+    <meta name="author" content="Aliness Banda">
+    <link rel="stylesheet" href="styles/mental-awareness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <h1>Mental Awareness</h1>
+            <img src="images/mental-icon.svg" alt="Mental awareness logo" class="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="mental-awareness.html">Home</a></li>
+                <li><a href="self-care.html">Self-Care</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Support Resources in South Africa</h2>
+            <p>If you or someone you know is struggling, there are places you can turn to for help. Here are some
+                trusted organizations and contact numbers you can use right now.</p>
+        </section>
+
+        <section class="resource-list">
+            <h3>Emergency and Helplines</h3>
+            <ul>
+                <li><strong>SADAG (South African Depression and Anxiety Group):</strong> 0800 567 567 or SMS 31393</li>
+                <li><strong>Lifeline South Africa:</strong> 0861 322 322 - Free 24/7 counseling and crisis support</li>
+                <li><strong>Suicide Crisis Helpline:</strong> 0800 12 13 14</li>
+                <li><strong>Childline South Africa:</strong> 0800 055 555 - For children and teens in need</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Free Online Support</h3>
+            <ul>
+                <li><a href="https://www.sadag.org/" target="_blank" rel="noopener noreferrer">SADAG Official
+                        Website</a> - Mental health info, webinars, and help lines</li>
+                <li><a href="https://lifeline.org.za/" target="_blank" rel="noopener noreferrer">Lifeline South
+                        Africa</a> - Counselling services & trauma support</li>
+                <li><a href="https://www.childlinesa.org.za/" target="_blank" rel="noopener noreferrer">Childline SA</a>
+                    - Support and safety for children</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Find a Local Therapist</h3>
+            <p>Use directories like <a href="https://www.therapyroute.com/" target="_blank"
+                    rel="noopener noreferrer">TherapyRoute.com</a> or contact your local clinic or GP to connect with a
+                registered psychologist or counselor in your area.</p>
+        </section>
+
+        <section>
+            <h3>University & School Support</h3>
+            <p>Most universities in South Africa offer free mental health counseling. Ask your student services or
+                wellness center about available support.</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have suggestions or feedback about this site, feel free to reach out.</p>
+            <ul>
+                <li>Email: <a href="mailto:mentalawareness.infor@gmail.com">Mentalawareness.infor@gmail.com</a></li>
+                <li>Website: <a href="https://mentalawareness.org" target="_blank"
+                        rel="noopener noreferrer">Mentalawareness.org</a></li>
+            </ul>
+            <p><strong>Note:</strong> This website is for awareness and educational purposes only. I am not a licensed
+                mental health professional and cannot provide counselling or crisis support.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸Aliness Banda🌸 Zambia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
+</body>
+
+</html>

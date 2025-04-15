@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - Mental Awareness</title>
+    <meta name="description" content="Sources and references for mental awareness content">
+    <meta name="author" content="Aliness Banda">
+    <link rel="stylesheet" href="styles/mental-awareness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <h1>Mental Awareness</h1>
+            <img src="images/mental-icon.svg" alt="Mental awareness logo" class="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="mental-awareness.html">Home</a></li>
+                <li><a href="self-care.html">Self-Care</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>References</h2>
+            <p>Below are the sources used to create and support the content on this website:</p>
+
+            <ul>
+                <li>
+                    South African Depression and Anxiety Group (SADAG).
+                    <a href="https://www.sadag.org/" target="_blank"
+                        rel="noopener noreferrer">https://www.sadag.org/</a>
+                </li>
+                <li>
+                    LifeLine South Africa.
+                    <a href="https://lifeline.org.za/" target="_blank"
+                        rel="noopener noreferrer">https://lifeline.org.za/</a>
+                </li>
+                <li>
+                    Childline South Africa.
+                    <a href="https://www.childlinesa.org.za/" target="_blank"
+                        rel="noopener noreferrer">https://www.childlinesa.org.za/</a>
+                </li>
+                <li>
+                    Mental Health Foundation.
+                    <a href="https://www.mentalhealth.org.uk/" target="_blank"
+                        rel="noopener noreferrer">https://www.mentalhealth.org.uk/</a>
+                </li>
+                <li>
+                    World Health Organization - Mental health resources.
+                    <a href="https://www.who.int/health-topics/mental-health" target="_blank"
+                        rel="noopener noreferrer">https://www.who.int/health-topics/mental-health</a>
+                </li>
+                <li>
+                    TherapyRoute.com - Find a therapist in South Africa.
+                    <a href="https://www.therapyroute.com/" target="_blank"
+                        rel="noopener noreferrer">https://www.therapyroute.com/</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸Aliness Banda🌸 Zambia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
+</body>
+
+</html>

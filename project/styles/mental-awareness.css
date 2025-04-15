@@ -1,0 +1,191 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A7C7E7;
+    /* Soft Blue Background */
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: #6A5ACD;
+    /* Deep Purple for headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #6A5ACD;
+    /* Deep Purple footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #6A5ACD;
+}
+
+header h1 {
+    color: white;
+}
+
+.logo-title h1 {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+
+}
+
+nav ul li a:hover {
+    background-color: #6A5ACD;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Main Content */
+main section {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 250px;
+        /* Adjust the image size for mobile */
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .hero img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section {
+        width: 50%;
+        margin: 20px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+ol {
+    padding-left: 1.2em;
+    /* Reduce space on the left */
+    margin-left: 0;
+    /* Remove any left margin */
+    list-style-position: inside;
+    /* Brings numbers closer to the text */
+    color: #000;
+    /* Optional: set text color */
+    font-family: Arial, sans-serif;
+    /* Optional: match your body font */
+}

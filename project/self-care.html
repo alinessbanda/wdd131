@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care - Awareness Page</title>
+    <meta name="description" content="Practical self-care tips and advice to improve your mental well-being">
+    <meta name="author" content="Aliness Banda">
+    <link rel="stylesheet" href="styles/mental-awareness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <h1>Mental Awareness</h1>
+            <img src="images/mental-icon.svg" alt="Mental awareness logo" class="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="mental-awareness.html">Home</a></li>
+                <li><a href="self-care.html">Self-Care</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-medium2.webp" media="min-width: 500px">
+                <img src="images/hero-small-2.webp" alt="A picture of someone listening to music" width="500"
+                    height="250" loading="lazy">
+            </picture>
+        </section>
+
+        <section>
+            <h2>Self-Care</h2>
+            <p>Explore the importance of self-care and how you can take care of your mental and emotional health
+                everyday.</p>
+        </section>
+
+        <section>
+            <h2>Why Self-Care Matters</h2>
+            <p>Self care is essential for your mental, emotional and physical well-being. Taking time to care for
+                yourself helps you manage stress, feel balanced and stay connected to what truly matters.</p>
+        </section>
+
+        <section class="tips">
+            <h2>Daily self-care tips</h2>
+            <article>
+                <img src="images/meditation.jpg" alt="A person meditating peacefully" width="500" height="250"
+                    loading="lazy">
+                <h3>Meditation And Mindfulness</h3>
+                <p>Practise 10 minutes of deep breathing or guided meditation to clear your mind and reduce anxiety.</p>
+            </article>
+
+            <article>
+                <img src="images/journaling.jpg" alt="Writing in a journal" width="500" height="250" loading="lazy">
+                <h3>Express Through Journaling</h3>
+                <p>Write about your thoughts, dreams, or challenges. Journaling helps release tension and brings
+                    clarity.</p>
+            </article>
+
+            <article>
+                <img src="images/exercise.jpg" alt="A person going for a walk outdoors" width="500" height="250"
+                    loading="lazy">
+                <h3>Move Your Body</h3>
+                <p>Go for a walk, stretch or dance. Physical activity boosts your mood and sharpens focus.</p>
+            </article>
+
+            <article>
+                <img src="images/sleep.jpg" alt="Peaceful sleeping" width="500" height="250" loading="lazy">
+                <h3>Rest Well</h3>
+                <p>Aim for 7-9 hours of quality sleep. Good rest is key to emotional and mental balance.</p>
+            </article>
+        </section>
+
+        <section class="tips">
+            <h2>Random daily tips generater</h2>
+            <button id="newTipBtn">Get a New Tip</button>
+            <p id="tipDisplay"></p>
+            <button id="saveTipBtn">Save Tip</button>
+        </section>
+
+        <form id="moodForm">
+            <label for="moodInput">How do you feel today?</label>
+            <input type="text" id="moodInput" required>
+            <button type="submit">Submit Mood</button>
+        </form>
+
+        <ul id="moodHistory"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸Aliness Banda🌸 Zambia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        });
+    </script>
+</body>
+
+</html>
